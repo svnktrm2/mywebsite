@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shrikant Venkataramani</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--
+educate, a free CSS web template by ZyPOP (zypopwebtemplates.com/)
+
+Download: http://zypopwebtemplates.com/
+
+License: Creative Commons Attribution
+//-->
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+<div id="container">
+
+    <header>
+
+
+        <nav>
+	<div class="width">
+    			<ul class="sf-menu dropdown">
+        	<li><a href="index.html">Home</a></li>
+            <li><a class="has_submenu" href="projects.html">Projects</a>
+            	<ul>
+                	  <li><a href="nmf_vs_nn.html">NMF v/s Neural Nets</a></li>
+                    <li><a href="nn_adaptive_transforms.html">Neural Net based Adaptive Transforms</a></li>
+                    <li><a href="autodub.html">AutoDub: Automatic Redubbing for Voiceover Editing</a></li>
+                    <li><a href="acoustics_matching.html">Acoustics Matching</a></li>
+                    <li><a href="singing_voice_separation.html">Singing Voice Separation</a></li>
+              </ul>
+            </li>
+
+            <li><a href="publications_and_patents.html">Publications and Patents</a></li>
+
+            <li><a href="https://scholar.google.com/citations?user=hCSSNZwAAAAJ&hl=en">Google Scholar</a></li>
+
+            <li><a href="cv.pdf">Curriculum Vitae</a></li>
+
+            <li><a href="contact_me.html">Contact Me</a></li>
+
+        </ul>
+
+    </div>
+
+		<div class="clear"></div>
+
+    </nav>
+    <h1>Neural Net based Adaptive Transforms</h1>
+    </header>
+
+    <div id="body" class="width">
+
+
+
+		<section id="content" class="two-column with-right-sidebar">
+
+	    <article>
+
+
+
+      <h2>End-to-end Source Separation using Adaptive Front-ends</h2>
+      <p></p>
+      Source separation and other audio applications have traditionally
+      relied on the use of short-time Fourier transforms as a front-end
+      frequency domain representation step. The unavailability of a neural
+      network equivalent to forward and inverse transforms hinders the implementation
+      of end-to-end learning systems for these applications.
+      <p></p>
+      In this work, we present an auto-encoder neural network that can act as an equivalent
+      to short-time front-end transforms. We demonstrate the ability
+      of the network to learn optimal, real-valued basis functions directly
+      from the raw waveform of a signal and further show how it can be
+      used as an adaptive front-end for supervised source separation.
+      <p></p>
+      <p></p>
+      <section class="box feature">
+        <img src='images/BlockDiagram2.png' border=1 width="70%">
+      </section>
+      <p></p>
+      Figure: Block diagram of generalized NN based source separation
+      system using (a) STFT front-end (top) and (b) the proposed adaptive
+      front-end transform (bottom)
+      <p></p>
+      Here are some separation samples!
+      <p></p>
+
+			<ul>
+			  <li><strong>Reference</strong>: Male-Female Speech mixture from TIMIT database at 0 dB.</li>
+			  <li><strong>Female DFT</strong>: The female voice separated using DFT.</li>
+			  <li><strong>Female AET</strong>: The female voice separated using adaptive front-ends.</li>
+			  <li><strong>Female ortho AET</strong>: The female voice separated using adaptive and orthogonal front-ends, (i.e., the analysis transform is the transpose of the synthesis transform)</li>
+			</ul>
+
+			<table border="1" style="margin:0px auto" width="400">
+			  <tr>
+			    <td>#.</td>
+			    <td>Reference.</td>
+			    <td>Female DFT</td>
+			    <td>Female AET</td>
+			    <td>Female ortho AET</td>
+
+
+			  </tr>
+			  <tr>
+			    <td>1</td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/overlap_1.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/female_1.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/tsep/female_1.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/ortho/female_1.wav" /></audio></td>
+
+			  </tr>
+			  <tr>
+			    <td>2</td>
+					<td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/overlap_2.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/female_2.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/tsep/female_2.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/ortho/female_2.wav" /></audio></td>
+
+			  </tr>
+			  <tr>
+			    <td>3</td>
+					<td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/overlap_3.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/female_3.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/tsep/female_3.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/ortho/female_3.wav" /></audio></td>
+
+			  </tr>
+			  <tr>
+			    <td>4</td>
+					<td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/overlap_4.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/female_4.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/tsep/female_4.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/ortho/female_4.wav" /></audio></td>
+
+			  </tr>
+			  <tr>
+			    <td>5</td>
+					<td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/overlap_5.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/female_5.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/tsep/female_5.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/ortho/female_5.wav" /></audio></td>
+
+			  </tr>
+			  <tr>
+			    <td>6</td>
+					<td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/overlap_6.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/female_6.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/tsep/female_6.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/ortho/female_6.wav" /></audio></td>
+
+			  </tr>
+
+			  <tr>
+			    <td>7</td>
+					<td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/overlap_7.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/female_7.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/tsep/female_7.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/ortho/female_7.wav" /></audio></td>
+			  </tr>
+			  <tr>
+			    <td>8</td>
+					<td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/overlap_8.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/female_8.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/tsep/female_8.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/ortho/female_8.wav" /></audio></td>
+
+			  </tr>
+			  <tr>
+			    <td>9</td>
+					<td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/overlap_9.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/female_9.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/tsep/female_9.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/ortho/female_9.wav" /></audio></td>
+
+			  </tr>
+			  <tr>
+			    <td>10</td>
+					<td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/overlap_10.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/dft/female_10.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/tsep/female_10.wav" /></audio></td>
+			    <td><audio controls style="width: 200px;"><source src="https://jmcasebeer.github.io/adfe/ortho/female_10.wav" /></audio></td>
+
+			  </tr>
+			</table>
+
+      <p></p>
+
+      In terms of separation performance, these transforms significantly outperform
+      their Fourier counterparts.
+      <p></p>
+      <section class="box feature">
+        <img src='images/FullPerformance.pdf' border=1 width="70%">
+      </section>
+      <p></p>
+      Figure: Comparison of source separation performance on 20 speech
+      on speech mixtures in terms of BSS EVAL parameters. We compare
+      the separation performance for multiple front end transforms
+      viz., STFT, AET and orthogonal AET. The dashed line in the centre
+      indicates the median value and the dotted lines above and below
+      indicate the interquartile range. We see that opting for an adaptive
+      front-end results in a significant improvement in source separation
+      performance over STFT front-ends. Comparing the cost-functions
+      we see that SDR (left) is a more appropriate cost-function to MSE
+      (right) for end-to-end source separation.
+      <p></p>
+
+      <ul>
+      <li><p> Check out the <a href="https://arxiv.org/pdf/1705.02514.pdf" title="Paper">paper</a> here.</li>
+      <li><p> Check out the <a href="https://github.com/svj1991/Adaptive_front_ends" title="Code">code</a> here.</li>
+      </ul>
+
+          </li>
+
+        </ul>
+
+    <!-- </article> -->
+        </section>
+
+        <aside class="sidebar big-sidebar right-sidebar">
+
+
+            <ul>
+               <li>
+                    <section class="box feature">
+													<img src='images/my_pic.png' border=1>
+												</section>
+                    </ul>
+                </li>
+
+
+
+
+
+
+              <h4>News</h4>
+              <ul class="newslist">
+                    <li>
+                      <p><span class="newslist-date">Nov 3, 2017</span>
+                        I will be presenting our work on "End-to-end source separation using Adaptive Front Ends"
+                        at the NIPS workshop on Machine Learning for audio processing (ML4Audio) on Dec 8. LA, here we come.
+                    </li>
+
+                    <li>
+                      <p><span class="newslist-date">Sep 28, 2017</span>
+                        Our paper won the "Best Student Paper Award" at MLSP 2017.
+                    </li>
+
+                    <li>
+                      <p><span class="newslist-date">Aug 25, 2017</span>
+                        Our paper "Neural Network Alternatives to Convolutive Audio Models for Source Separation" has been accepted for publication at MLSP 2017. Japan, here we come.
+                    </li>
+
+              </ul>
+
+
+
+            </ul>
+
+        </aside>
+    	<div class="clear"></div>
+    </div>
+    <footer>
+
+         <p>&copy; YourSite 2014. <a href="http://zypopwebtemplates.com/">Free HTML5 Templates</a> by ZyPOP</p>
+
+    </footer>
+</div>
+</body>
+</html>
