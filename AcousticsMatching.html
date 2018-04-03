@@ -51,7 +51,7 @@
   		<div class="blurb">
 			<h1>Acoustics Matching</h1>
 			<p class = "indent"> This page gives some demo audio examples for Acoustics Matching in reverberant environments.
-        Each file consists of a concatenation of three audio signals. The first part is the input signal. The second part is the reference to which the input must be matched.
+        Each file consists of a concatenation of two audio signals. The first part is the reference signal. The second part is either the original input or the processed input.
         The third part is the processed input.
       </p>
 
@@ -61,77 +61,87 @@
 
 
 			<ul>
-			  <li><strong>Question 1</strong>:Rate the quality of the match between part 1 and part 2.</li>
-			  <li><strong>Question 2</strong>: Rate the quality of the match between part 2 and part 3.</li>
-			  <li><strong>Question 3</strong>: Rate the quality of part 3 for distortions and abnormalities.</li>
+			  <li><strong>Question 1</strong>:Rate the quality of the match between "Before" and "After" cases.</li>
+			  <li><strong>Question 3</strong>: Rate the quality of the "After" sound for distortions and abnormalities.</li>
 
 			</ul>
 
 			<table border="1" style="margin:0px auto; width:50%">
 			  <tr>
 			    <td>#.</td>
-			    <td>Mean t60 time.</td>
-			    <td>Audio file</td>
+			    <td>Difference in rt60 between input and reference.</td>
+			    <td>Before</td>
+          <td>After</td>
 			  </tr>
 
 			  <tr>
 			    <td>1</td>
-          <td>-0.01</td>
-			    <td><audio controls style="width: 200px;"><source src="demos/f4t-0_010.wav" /></audio></td>
+          <td>-0.4136</td>
+			    <td><audio controls style="width: 200px;"><source src="DemoFiles/0_4136Bef.wav" /></audio></td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/0_4136Aft.wav" /></audio></td>
 			  </tr>
 
         <tr>
 			    <td>2</td>
-          <td>0.2284</td>
-			    <td><audio controls style="width: 200px;"><source src="demos/m1t0_2284.wav" /></audio></td>
+          <td>0.3030</td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/0_3030Bef.wav" /></audio></td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/0_3030Aft.wav" /></audio></td>
 			  </tr>
 
         <tr>
 			    <td>3</td>
-          <td>-0.287</td>
-			    <td><audio controls style="width: 200px;"><source src="DemoFiles/m5t-0_287.wav" /></audio></td>
+          <td>-0.497</td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/-0_497Bef.wav" /></audio></td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/-0_497Aft.wav" /></audio></td>
 			  </tr>
 
         <tr>
 			    <td>4</td>
-          <td>-0.291</td>
-			    <td><audio controls style="width: 200px;"><source src="DemoFiles/f3t-0_291.wav" /></audio></td>
+          <td>-0_199</td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/-0_199Bef.wav" /></audio></td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/-0_199Aft.wav" /></audio></td>
 			  </tr>
 
         <tr>
 			    <td>5</td>
-          <td>0.0797</td>
-			    <td><audio controls style="width: 200px;"><source src="DemoFiles/f5t0_0797.wav" /></audio></td>
+          <td>-0_044</td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/-0_044Bef.wav" /></audio></td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/-0_044Aft.wav" /></audio></td>
 			  </tr>
 
         <tr>
 			    <td>6</td>
-          <td>-0.103</td>
-			    <td><audio controls style="width: 200px;"><source src="DemoFiles/m4t-0_103.wav" /></audio></td>
+          <td>0_2839</td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/0_2839Bef.wav" /></audio></td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/0_2839Aft.wav" /></audio></td>
 			  </tr>
 
         <tr>
 			    <td>7</td>
-          <td>-0.402</td>
-			    <td><audio controls style="width: 200px;"><source src="DemoFiles/f4t-0_402.wav" /></audio></td>
+          <td>0_1619</td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/0_1619Bef.wav" /></audio></td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/0_1619Aft.wav" /></audio></td>
 			  </tr>
 
         <tr>
 			    <td>8</td>
-          <td>0.1656</td>
-			    <td><audio controls style="width: 200px;"><source src="DemoFiles/m1t0_1656.wav" /></audio></td>
+          <td>0_0605</td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/0_0605Bef.wav" /></audio></td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/0_0605Aft.wav" /></audio></td>
 			  </tr>
 
         <tr>
 			    <td>9</td>
-          <td>-0.735</td>
-			    <td><audio controls style="width: 200px;"><source src="DemoFiles/f1t-0_735.wav" /></audio></td>
+          <td>-0_379</td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/-0_379Bef.wav" /></audio></td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/-0_379Aft.wav" /></audio></td>
 			  </tr>
 
         <tr>
 			    <td>10</td>
-          <td>-0.122</td>
-			    <td><audio controls style="width: 200px;"><source src="DemoFiles/f2t-0_122.wav" /></audio></td>
+          <td>0_0719</td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/0_0719Bef.wav" /></audio></td>
+          <td><audio controls style="width: 200px;"><source src="DemoFiles/0_0719Aft.wav" /></audio></td>
 			  </tr>
 
 			</table>
